@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+
+html, body{
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;;
+    font-weight: 300;
+    color: #474747;
+}
+
+.content{
+    max-width: 1140px;
+    margin: 100px 50px 150px 50px;
+}
+
+header, main, footer{
+    display: none;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    display:block
+}
+
+h1{
+    display: block;
+    font-size: 1.4em;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+p{
+    color: #999999;
+    padding-bottom: 25px;
+    line-height: 1.5em;
+    width: 75%;
+}
+
+.nopadding{
+    padding-bottom: 0;
+}
+
+.button, .social{
+    color: #999999;
+    text-decoration: none;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover, .social:hover{
+    text-decoration: line-through;
+    color: #c0f70c;
+}
+
+.social:nth-child(2){
+    margin-left: 10px;
+}
+
+.banner{
+    display: none;
+}
+
+@media screen and (min-width: 950px) {
+    .content{
+        margin: 100px 50px 150px 100px;
+    }
+    .logo{
+        display: inline;
+    }
+    h1{
+        display: inline;
+        padding-left: 200px;
+    }
+    p{
+        padding-left: 230px;
+    }
+    
+    .banner{
+        width: 250px;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: -999;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .content{
+        margin: 100px 50px 150px 150px;
+    }
+    .banner{
+        width: 350px;
+    }
+    h1{
+        display: inline;
+        padding-left: 400px;
+    }
+    p{
+        padding-left: 430px;
+    }
+}
